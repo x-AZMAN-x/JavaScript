@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+</head>
+<body>
+    <h1>Click the button to change the background color!</h1>
+    <button id="changeColorButton">Change Background Color</button>
+
+    <script>
+        function changeBackgroundColor() {
+            // You can also cycle through an array of colors or generate random colors
+            const colors = ['lightblue', 'lightgreen', 'lightcoral', 'lightgoldenrodyellow'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+
+        const button = document.getElementById('changeColorButton');
+        button.addEventListener('click', changeBackgroundColor);
+    </script>
+</body>
+</html>

@@ -17,4 +17,4 @@ document.getElementById("check").addEventListener("click", () => {
         result.textContent = `"Please Enter Some Text.`
         result.style.color = "yellow";
     }
-});
+})
